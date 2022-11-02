@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 A Web Browser (preferably Google Chrome
 
 ### Setup
-clone the GitHub Repository [Awsome-Books](https://github.com/AbdimulhinYussuf3675/Awesome-books)
+clone the GitHub Repository [Awesome-Books](https://github.com/AbdimulhinYussuf3675/Awesome-books)
 
 ### Usage
   Open index.html in Chrome.
