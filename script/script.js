@@ -17,7 +17,7 @@ const booksList = [
 ];
 
 function createBook(book) {
-  const booksCont = document.getElementById('booksCont');
+  const booksStore = document.getElementById('booksStore');
   const bookDiv = document.createElement('div');
   bookDiv.className = 'book';
   bookDiv.id = `book-${book.id}`;
@@ -40,7 +40,7 @@ function createBook(book) {
     });
     localStorage.setItem('storedData', JSON.stringify(storedData));
   });
-  booksCont.append(bookDiv);
+  booksStore.append(bookDiv);
 }
 
 function storeInputData() {
