@@ -1,10 +1,8 @@
 * {
-  box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  padding: 0 0 100px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -71,4 +69,77 @@ input {
   color: rgb(53, 187, 192);
   text-transform: lowercase;
   font-style: italic;
+}
+
+nav {
+  background-color: #fff;
+  height: 41px;
+  padding: 0px 9px;
+  box-shadow: 3px 3px 3px rgb(0 0 0 / 30%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navLink {
+  border-right: 3px solid #003557;
+  padding: 5px 0;
+  padding-right: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navLink:nth-child(3) {
+  border-right: none;
+  padding-right: 0;
+}
+
+.navLink a:hover {
+  color: #ff3860;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#addBook {
+  display: none;
+  transition: all 0.5s;
+  padding: 15px;
+  margin: 20px;
+  align-items: center;
+}
+
+#contact {
+  display: none;
+  transition: all 0.5s;
+  padding: 40px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px;
 }
