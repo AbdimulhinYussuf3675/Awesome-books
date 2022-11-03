@@ -72,7 +72,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const bookTitle = document.getElementById('title');
   const bookAuthor = document.getElementById('author');
-  const book = new Book(booksId(), bookTitle.value, bookAuthor.value);
+  const book = new Book(BooksId(), bookTitle.value, bookAuthor.value);
   book.addBook();
   localStorage.setItem('store', JSON.stringify(store));
   appendBook(book);
