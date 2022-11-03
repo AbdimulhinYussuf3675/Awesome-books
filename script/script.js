@@ -53,3 +53,12 @@ addLink.addEventListener('click', () => {
   contact.style.display = 'none';
   bookStore.style.display = 'none';
 });
+
+const dateAndTime = document.getElementById('dateDisplay');
+const timeSet = function () {
+  dateAndTime.innerHTML = window.luxon.DateTime.local().toFormat('dd LLL, yyyy | t');
+};
+
+timeSet();
+
+setInterval(() => { timeSet(); }, 1000);
