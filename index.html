@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/e83d856101.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesomebooks</title>
   <link rel="stylesheet" href="./styles/styles.css">
-  <title>Awesome Books</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Awesome Books</h1>
-    <div class="booksStore" id="booksStore">
 
-    </div>
-    <div class="addBook">
-      <input type="text" id="title" placeholder="Add Book Title" required>
-      <input type="text" id="author" placeholder="Add Book Author" required>
-      <button type="submit" id="addBtn">Add</button>
+  <section class="container">
+  <h1 id="awesomebookstitle">Awesome Books</h1>
+  <div id="store">
+    <div class="empty hide" id="empty-id">
+      
     </div>
   </div>
+  
+  <h2 id="addnewbooktitle">Add a new Book</h2>
+  <form action="#" id="form-id">
+    <input type="text" name="title" id="title" placeholder="Add Book Title" required>
+    <input type="text" name="author" id="author" placeholder="Add Book Author" required>
+    <button id="add-btn" type="submit" >Add</button>
+  </form>
+</section>
   <script src="./script/script.js"></script>
+  <script src="./script/books.js"></script>
 </body>
 </html>
