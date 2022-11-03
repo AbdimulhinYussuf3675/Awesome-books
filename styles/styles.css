@@ -106,8 +106,12 @@ nav {
   padding-right: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .link a:hover {
-  color: #ff3860;
+  color: #161516;
 }
 
 ul {
@@ -117,10 +121,6 @@ ul {
 .navLink:nth-child(3) {
   border-right: none;
   padding-right: 0;
-}
-
-a {
-  text-decoration: none;
 }
 
 .navLink a:hover {
