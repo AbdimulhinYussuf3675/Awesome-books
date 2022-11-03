@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +11,76 @@
   <title>Awesomebooks</title>
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
-<body>
 
-  <section class="container">
-  <h1 id="awesomebookstitle">Awesome Books</h1>
-  <div id="store">
-    <div class="empty hide" id="empty-id">
-      
-    </div>
-  </div>
-  
-  <h2 id="addnewbooktitle">Add a new Book</h2>
-  <form action="#" id="form-id">
-    <input type="text" name="title" id="title" placeholder="Add Book Title" required>
-    <input type="text" name="author" id="author" placeholder="Add Book Author" required>
-    <button id="add-btn" type="submit" >Add</button>
-  </form>
-</section>
+<body>
+  <main class="container">
+
+
+    <nav class="toolbar">
+      <a href="./index.html">Awesome Books</a>
+
+      <ul class="navlinks">
+        <li class="link">
+          <a href="#bookStore" id="library">Library</a>
+        </li>
+        <li class="link">
+          <a href="#addbook" id="addLink">Add Book</a>
+        </li>
+        <li class="link">
+          <a href="#contact" id="contactLink">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="bookStore">
+      <div id="store">
+        <div class="empty hide" id="empty-id">
+        </div>
+      </div>
+      <button id="btn1" type="submit">Add a book</button>
+    </section>
+
+    <section id="addBook">
+
+      <div class="library">
+        <h2 id="addnewbooktitle">Add a new Book</h2>
+        <form action="#" id="form-id">
+          <input type="text" name="title" id="title" placeholder="Add Book Title" required>
+          <input type="text" name="author" id="author" placeholder="Add Book Author" required>
+          <button id="add-btn" type="submit">Add a book</button>
+      </div>
+      </form>
+    </section>
+    <section id="contact" class="contact">
+      <div class="cont">
+        <h2>Contact Information</h2>
+        <div class="contactInfo">
+          <h4>
+            Do you have any questions or want to say "Hello"?<br />You can
+            reach out to me:
+          </h4>
+          <ul>
+            <li>
+              Via e-mail: adamabdimulhi.001@gmail.com
+            </li>
+            <li>
+              <h5>My phone number:+254759935007</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Copyright
+        <strong>Abdimulhin Adan</strong> </a>
+        &copy;2022
+      </p>
+    </footer>
+  </main>
   <script src="./script/script.js"></script>
   <script src="./script/books.js"></script>
 </body>
+
 </html>
