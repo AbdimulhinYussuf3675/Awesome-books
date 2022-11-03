@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesomebooks</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.1.1/build/global/luxon.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 
       <ul class="navlinks">
         <li class="link">
-          <a href="#bookStore" id="library">Library</a>
+          <a href="#bookStore" id="library">Book List</a>
         </li>
         <li class="link">
           <a href="#addbook" id="addLink">Add Book</a>
@@ -31,13 +32,12 @@
         </li>
       </ul>
     </nav>
-
+    <div class="dateAndTime" id="dateAndTime">sdf</div>
     <section id="bookStore">
       <div id="store">
         <div class="empty hide" id="empty-id">
         </div>
       </div>
-      <button id="btn1" type="submit">Add a book</button>
     </section>
 
     <section id="addBook">
