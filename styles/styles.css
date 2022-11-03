@@ -1,7 +1,10 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 100px;
 }
 
 .container {
@@ -13,58 +16,55 @@
   border: 1px solid rgb(216, 37, 37);
   text-align: center;
   background-color: antiquewhite;
+  box-shadow: 5px 10px #888888;
 }
 
-.booksStore {
-  width: 60%;
-  margin: 20px auto;
-  border: 1px solid rgb(39, 52, 168);
+#awesomebookstitle {
+  text-align: center;
 }
 
-.book {
-  padding: 0 40px;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+#booklisttitle {
+  text-align: center;
 }
 
-.bookTitle {
-  font-size: 1.1em;
-  font-weight: bold;
+#addnewbooktitle {
+  text-align: center;
+  font-size: 14px;
 }
 
-.bookAuthor {
-  font-size: 0.9em;
-  font-weight: bold;
-}
-
-.removeBtn {
-  width: 50%;
+#store {
+  width: 32%;
   margin: 0 auto;
-  padding: 5px 0;
-  font-size: 0.9em;
-  font-weight: bold;
+  padding: 25px 20px;
 }
 
-.addBook {
-  width: 60%;
-  margin: 0 auto;
+.empty {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.show {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.remove {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+form {
+  width: 30%;
+  margin: 0 auto;
 }
 
 input {
-  padding: 3px;
-}
-
-#addBtn {
-  width: 35%;
-  margin: 0 auto;
-  padding: 5px 0;
-  font-size: 0.9em;
-  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 ::placeholder {
