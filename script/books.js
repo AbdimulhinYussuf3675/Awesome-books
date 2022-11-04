@@ -46,10 +46,13 @@ const appendBook = (book) => {
   bookElement.id = `book-${book.id}`;
   bookElement.className = 'book';
   bookElement.innerHTML = `
-    <p>${book.title}</p>
-    <p>${book.author}</p>
+    <div class="content">
+    <p>"${book.title}"</p>
+    <p>By ${book.author}</p>
     <button id="remove-${book.id}" class="remove">Remove</button>
     <hr>
+    <div/>
+    
   `;
 
   booksSection.appendChild(bookElement);

@@ -29,7 +29,11 @@ const addBook = document.getElementById('addBook');
 const addLink = document.getElementById('addLink');
 const contactLink = document.getElementById('contactLink');
 const contact = document.getElementById('contact');
+const addbtn1 = document.getElementById('addbtn1');
 
+addbtn1.addEventListener('click', () => {
+  addBook.style.display = 'block';
+})
 bookLink.addEventListener('click', () => {
   bookStore.style.display = 'block';
   addBook.style.display = 'none';
@@ -37,7 +41,6 @@ bookLink.addEventListener('click', () => {
 });
 
 bookStore.addEventListener('click', () => {
-  addBook.style.display = 'block';
   contact.style.display = 'none';
   bookStore.style.display = 'none';
 });
