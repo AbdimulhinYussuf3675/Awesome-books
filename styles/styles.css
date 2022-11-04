@@ -1,10 +1,8 @@
 * {
-  box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  padding: 0 0 100px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -33,7 +31,6 @@ body {
 }
 
 #store {
-  width: 32%;
   margin: 0 auto;
   padding: 25px 20px;
 }
@@ -57,6 +54,22 @@ body {
   padding: 5px 10px;
 }
 
+hr {
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  padding: 7px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 10fr 10fr 10fr;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+  background-color: aliceblue;
+}
+
 form {
   width: 30%;
   margin: 0 auto;
@@ -71,4 +84,99 @@ input {
   color: rgb(53, 187, 192);
   text-transform: lowercase;
   font-style: italic;
+}
+
+nav {
+  background-color: #fff;
+  height: 41px;
+  padding: 0 9px;
+  box-shadow: 3px 3px 3px rgb(0 0 0 / 30%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.link {
+  border-right: 3px solid #003557;
+  padding: 5px 0;
+  padding-right: 10px;
+}
+
+.link:nth-child(3) {
+  border-right: none;
+  padding-right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: #161516;
+}
+
+ul {
+  list-style: none;
+}
+
+.navLink:nth-child(3) {
+  border-right: none;
+  padding-right: 0;
+}
+
+.navLink a:hover {
+  color: #ff3860;
+}
+
+#addBook {
+  display: none;
+  transition: all 0.5s;
+  padding: 15px;
+  margin: 20px;
+  align-items: center;
+}
+
+#contact {
+  display: none;
+  transition: all 0.5s;
+  padding: 40px;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.dateAndTime {
+  text-align: right;
+  padding-right: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+footer {
+  padding: 20px;
 }
