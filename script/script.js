@@ -33,7 +33,7 @@ const addbtn1 = document.getElementById('addbtn1');
 
 addbtn1.addEventListener('click', () => {
   addBook.style.display = 'block';
-})
+});
 bookLink.addEventListener('click', () => {
   bookStore.style.display = 'block';
   addBook.style.display = 'none';
