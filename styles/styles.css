@@ -31,7 +31,6 @@
 }
 
 #store {
-  width: 32%;
   margin: 0 auto;
   padding: 25px 20px;
 }
@@ -53,6 +52,22 @@
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
+}
+
+hr {
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  padding: 7px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 10fr 10fr 10fr;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+  background-color: aliceblue;
 }
 
 form {
